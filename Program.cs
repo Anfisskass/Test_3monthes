@@ -1,16 +1,27 @@
 ﻿
-
-int[] CreateRandomArray(int size, int min, int max)
+string[] CreateStringArray(int size)
 {
-    int[] newArray = new int [size];
-    
-    for (int i = 0; i < size; i++)
+    string[] words = new string[size];
+    for(int i = 0; i < size; i++)
     {
-        newArray[i] = new Random().Next(min, max +1);
-
-        Console.Write(newArray[i] + "  ");
+        Console.Write($"Input {i + 1} word ");
+        words[i] = Console.ReadLine();
     }
-    Console.WriteLine();
+    return words;
+}
 
-    return newArray;
+void Threelongsymbol(string[] array, string[] array2)
+{
+    string[] array = new string[size];
+    string[] array2 = new string[array1.Length];
+    int count = 0;
+
+    for (int i = 0; i < array.Length; i++)
+    {
+    if(array[i].Length <= 3)
+        {
+        array2[count] = array[i];
+        count++;
+        }
+    }
 }
